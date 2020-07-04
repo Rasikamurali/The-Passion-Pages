@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+	<title class="title-header">Genetics | The World of the Gene </title>
+<br> 
+<p class="founded">Genetics</p>
+<link href="./stylist.css" type="text/css" rel="stylesheet">
+</head>
+<body> 
+
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#chat">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" >
+      <a href="#Mendel">Starting with Mendel</a>
+      <a href="#pathway">The pathway to Gene</a>
+      <a href="#DNA">DNA Structure</a>
+    </div>
+  </div> 
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="image1.jpg" style="width:100%">
+  <div class="text">James Watson and Francis Crick</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="image2.jpg" style="width:100%">
+  <div class="text">Charles Darwin</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="image3.jpg" style="width:100%">
+  <div class="text">Rosalind Franklin</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+</script>
+
+<br> 
+<br> 
+<br> 
+
+<div id="home">
+<h1>Overview</h1> 
+<p>Genetics is the study of heredity and inheritance. The first theories regarding genetics was quoted by Plato and Aristotle, 
+but scientific backing to debunk these theories came about only after Charles Darwin failed to answer several questions about 
+evolution and when Mendel's paper of pea flowers had been rediscovers in the late 1800s and early 1900s. <br> 
+Over here we will discuss the journey that brought about our understanding of the Gene- an fascinating part of our anatomy 
+that has several answers as to why we are the way we are. <br> 
+Several scientists contributed to this study from Darwin, Mendel and Morgan to Watson and Crick. 
+<br> It would be an impossible task to cover all scientists and all aspects of this journey hence only Mendel's findings
+followed by the Dobshavzy's results and how genetic science became the founding tool for political propaganda, and the 
+final structure of DNA will be discussed here. 
+</p></div>
+<div id="Mendel">
+<table align="center" width="100%"> 
+<tbody>
+<tr> 
+<td><img src="charles.jpg" height="200px" width="200px"></td> 
+<td><h1 class="refer">THE THEORY OF EVOLUTION</h1> 
+<br> 
+<p>Charles Darwin was a natural observer. So when the opportunity to travel around the world and categorize species came about, he was the perfect person. Charles made compelling notes 
+in several journals that he owned and that was the birth of his "theory of revolution". </p> 
+<br>
+</tr>
+<tr> 
+<td ><img src="mendel.jpg" alt="Bass Clef" height="200px" width="200px"></td> 
+<td><h1 class="refer" >MENDEL & PEA PLANTS</h1> 
+<br>
+<p>After having failed to pass examinations to become a teacher, Mendel returned to the monestary where he was taken in and tended to his plants. 
+He was a natural experimenter and used a several acres of land to find a mathematical ratio that would describe the nature of selection and reproduction. His work however would be regarded
+by the scientific world only after three decades. </p> 
+<br>
+</tr> 
+<tr> 
+<td ><img src="morgan.jpg" alt="Bass Clef" height="200px" width="200px"></td> 
+<td><h1 class="refer" >WEIGHING IN ON MENDEL'S WORK</h1> 
+<br>
+<p>Morgan something something</p> 
+<br>
+</tr>   
+</tbody> 
+</table>
+</div>
+
+
+<br> 
+<br> 
+<br> 
+<div id="pathway"> 
+<h1>Developments, Politics and Propaganda</h1> 
+<p> 
+Eugenics, the holocaust and Dobhaszvy's theory
+</p> 
+</div> 
+
+<br> 
+<br>
+<br>
+
+<div id="DNA"> 
+
+<h1>Modelling the structure of DNA</h1> 
+<p class="text1"> ATGCATGCATGCATGCATGCATGCATGC</p> 
+<p> 
+James Watson, Francis Crick and Rosalind Franklin. Imaging of the structure and getting it modelled</p>
+</div>
+
+
+
+</body> 
+</html> 
+
